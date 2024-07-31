@@ -230,10 +230,10 @@ Let's write a simple test code to confirm that your INA219 driver is working cor
     // Read all registers
     if (INA219_READ_REG( current_sensor, ina219_configuration, config_reg )        == EMBEDD_RESULT_OK &&
         INA219_READ_REG( current_sensor, ina219_shunt_voltage, shunt_voltage_reg ) == EMBEDD_RESULT_OK &&
-     	  INA219_READ_REG( current_sensor, ina219_bus_voltage,   bus_voltage_reg )   == EMBEDD_RESULT_OK &&
-     	  INA219_READ_REG( current_sensor, ina219_power,         power_reg )         == EMBEDD_RESULT_OK &&
-     	  INA219_READ_REG( current_sensor, ina219_current,       current_reg )       == EMBEDD_RESULT_OK &&
-     	  INA219_READ_REG( current_sensor, ina219_calibration,   calibration_reg )   == EMBEDD_RESULT_OK)
+        INA219_READ_REG( current_sensor, ina219_bus_voltage,   bus_voltage_reg )   == EMBEDD_RESULT_OK &&
+        INA219_READ_REG( current_sensor, ina219_power,         power_reg )         == EMBEDD_RESULT_OK &&
+        INA219_READ_REG( current_sensor, ina219_current,       current_reg )       == EMBEDD_RESULT_OK &&
+        INA219_READ_REG( current_sensor, ina219_calibration,   calibration_reg )   == EMBEDD_RESULT_OK)
     {
       /* USER CODE BEGIN IN CASE OF SUCCESS */
       debug("Register map:\r\n");
